@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .active-element{
+            border: 1px solid red;
+            padding: 20px;
+            background: gray;
+        }
+    </style>
 </head>
 <body>
-test
+<div class="active-element">testtesttesttesttesttest</div>
 </body>
+<script src="https://code.jquery.com/jquery-2.0.3.js"></script>
+<script>
+    $('.active-element').on({ 'touchstart' : function () { $(this).addClass('fake-active'); }, 'touchend' : function () { $(this).removeClass('fake-active'); } });]
+</script>
 </html>
