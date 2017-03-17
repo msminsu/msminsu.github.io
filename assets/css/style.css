@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     background-color: #000;
 }
-
+a{outline:1px solid red; opacity:.5;background: red;}
 form, fieldset {
     border: 0;
 }
@@ -28,13 +28,14 @@ img {
     background: #fff;
 }
 
-.header {
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+header ,footer{
+    position: relative;
 }
+.wrap div{ position: relative;}
 
 .btn {
     position: absolute;
     left: 50%;
 }
+
+.btn-01{     top: 28%; width: 6%; height: 45%; margin-left: 40%; }
