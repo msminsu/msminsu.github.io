@@ -10,30 +10,57 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/img/comm/iOS_152x152.png"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-
+    
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="wrap">
         <header>
-            <img src="assets/img/bg-header.jpg" alt="">
-            <a href="#none" class="btn btn-01"></a>
+            <h1><a href="#none" class="ico-ally">KT 개인</a></h1>
+            <a href="#none" class="btn-alert ico-ally">알림</a>
+            <a href="#none" class="btn-srch ico-ally">검색</a>
+            <a href="#none" class="btn-all  ico-ally">전체 메뉴보기</a>
         </header>
-        <div class="wrap">
-            <div class="sec-01"><img src="assets/img/bg-sec-01.jpg" alt=""></div>
-            <div class="sec-02"><img src="assets/img/bg-sec-02.jpg" alt=""></div>
-            <div class="sec-03"><img src="assets/img/bg-sec-03.jpg" alt=""></div>
-            <div class="sec-04"><img src="assets/img/bg-sec-04.jpg" alt=""></div>
-            <div class="sec-05"><img src="assets/img/bg-sec-05.jpg" alt=""></div>
-            <div class="sec-06"><img src="assets/img/bg-sec-06.jpg" alt=""></div>
-            <div class="sec-07"><img src="assets/img/bg-sec-07.jpg" alt=""></div>
-        </div>
+        <nav>
+            
+        </nav>
+        <section class="contents">
+            
+        </section>
         <footer>
-            <img src="assets/img/bg-footer.jpg" alt="">
+            <div class="notice">
+                <a href="#none" >
+                    <strong>공지 </strong><span>세계 최초 인공지능 TV '기가 지니'출시</span>
+                </a>
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#none">회사소개</a></li>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">이용자 피해예방 가이드</a></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div></div>
+            <div></div>
         </footer>
     </div>
     <script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="assets/js/ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn-01').on('click', function(){
+                $('.gnb').css({display:'block'});
+            });
+            $('.btn-02').on('click', function(){
+                $('.gnb').css({display:'none'});
+            });
+
+        });
+    </script>
 </body>
 </html>
