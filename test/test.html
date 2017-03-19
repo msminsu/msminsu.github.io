@@ -23,9 +23,6 @@
         .fake-active{
             background: red;
         }
-        body{
-            background:url(./ani.gif) no-repeat 0 0;
-        }
     </style>
 </head>
 <body>
@@ -33,35 +30,21 @@
 </body>
 <script src="https://code.jquery.com/jquery-2.0.3.js"></script>
 <script>
+    $('.active-element').on({ 'touchstart' : function () { $(this).addClass('fake-active'); }, 'touchend' : function () { $(this).removeClass('fake-active'); } });
 
-   
-
-    $(document).ready(function(){
-
-
-        
-    });
+    var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보
 
 
-function Person(name) {
-   this.name = name;
-}
-
-Person.prototype.copy = function() {
-   return new this.constructor(this.name);
-};
-
-function Student(name) {
-   Person.call(this, name);
-}
-
-//Student.prototype = Object.create(Person.prototype);
-
-Student.prototype.constructor = Student;
-
-var student1 = new Student("trinth");
-//console.log(student1.copy() instanceof Student);
-console.log(student1.name)
+    // 모바일 홈페이지 바로가기 링크 생성
+    /*if(userAgent.match('iphone')) {
+        document.write('<link rel="apple-touch-icon" href="/이미지경로/icon.png" />')
+    } else if(userAgent.match('ipad')) {
+        document.write('<link rel="apple-touch-icon" sizes="72*72" href="/이미지경로/icon.png" />')
+    } else if(userAgent.match('ipod')) {
+        document.write('<link rel="apple-touch-icon" href="/이미지경로/icon.png" />')
+    } else if(userAgent.match('android')) {
+        document.write('<link rel="shortcut icon" href="/이미지경로/icon.png" />')
+    }*/
 
 </script>
 </html>
