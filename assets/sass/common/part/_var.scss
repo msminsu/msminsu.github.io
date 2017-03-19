@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// * -------------------------------
+// * Variable Definition
+// * -------------------------------
+
+$folder: $static + '/assets/img/';
+$minWidth: 1100px;
+$imgWidth: 2200px;
+
+// * -------------------------------
+// * font object
+$font: (
+		'family':(
+				Malgun Gothic,
+				'맑은 고딕',
+				Dotum,
+				'돋움',
+				Hevetica,
+				AppleGothic,
+				Sans-serif
+		),
+		'size': (
+				12px,
+				1em
+		),
+		'line-height': 1
+)

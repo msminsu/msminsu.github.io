@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// * -------------------------------
+// * class modules definition
+// * -------------------------------
+
+// * -------------------------------
+// * Image Replace(IR)
+%ir {
+	display: block;
+	overflow: hidden;
+	text-indent: -999em;
+	text-align: left;
+}
+
+// * -------------------------------
+// * button position baseline
+%baseline {
+	position:absolute;
+	left: 50%;
+}
