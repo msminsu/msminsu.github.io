@@ -18,18 +18,18 @@ a,a:active,a:focus,a:hover,a:link,a:visited{font-size:100%;text-decoration:none}
 
 
 
-.ally{display: inline-block; overflow: hidden; color: transparent; white-space: nowrap;} 
+.ally{display: inline-block; overflow: hidden; color: transparent; white-space: nowrap;}
 
 .ico-ally{overflow:hidden; display: inline-block;color: transparent; white-space: nowrap;
-			background-image: url(../img/ico-sprite.png);
-    	  -webkit-background-size: 200px 200px; background-size: 200px 200px;
-		   background-repeat: no-repeat;
+    background-image: url(../img/ico-sprite.png);
+    -webkit-background-size: 200px 200px; background-size: 200px 200px;
+    background-repeat: no-repeat;
 }
 
 
 
 .wrap{min-width: 320px;}
-header{height:58px;}
+header{height:58px; z-index: 1}
 header h1 a{display: block; position: absolute; top: 19px; left: 15px; width:62px; height: 21px; background-position: 0 0;color:transparent;}
 
 .btn-alert{display: block; position: absolute; top: 19px; right: 105px; width:27px; height: 23px; background-position: -66px 0px;}

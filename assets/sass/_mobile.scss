@@ -4,8 +4,7 @@
 //a,button { border: 1px solid red; }
 body{background-color: #f19ebc;}
 /* header */
-#header{
-	//@include section-set('bg_header.jpg');
+header{
 	@include ally('h1,p');
 	.goHome{
 		@include go(85, 35, 29, -548);
@@ -15,7 +14,6 @@ body{background-color: #f19ebc;}
 	.goEvent{
 		@include go(90, 29, $top, 459);
 	}
-
 }
 
 

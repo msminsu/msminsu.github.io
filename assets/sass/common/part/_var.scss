@@ -5,23 +5,17 @@
 // * -------------------------------
 
 $folder: $static + '/assets/img/';
-$minWidth: 1100px;
-$imgWidth: 2200px;
+$minWidth: 320px;
+$imgWidth: 100%;
 
 // * -------------------------------
 // * font object
 $font: (
 		'family':(
-				Malgun Gothic,
-				'맑은 고딕',
-				Dotum,
-				'돋움',
-				Hevetica,
-				AppleGothic,
 				Sans-serif
 		),
 		'size': (
-				12px,
+				16px,
 				1em
 		),
 		'line-height': 1
