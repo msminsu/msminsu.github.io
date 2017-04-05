@@ -25,12 +25,12 @@ cache = false
 
 # ------------------------------------------------------------------------
 # 프로젝트 폴더 경로 지정
-css_dir         = "css"
-sass_dir        = "sass"
-javascripts_dir = "js"
-images_dir      = "img"
+css_dir         = "assets/css"
+sass_dir        = "assets/sass"
+javascripts_dir = "assets/js"
+images_dir      = "assets/img"
 images_path = "img"
-fonts_dir       = "font"
+fonts_dir       = "assets/font"
 
 # ------------------------------------------------------------------------
 # SASS => CSS 변경 시에 변경되는 아웃풋 스타일 설정
@@ -38,8 +38,8 @@ fonts_dir       = "font"
 # :nested
 # :compact
 # :compressed
-# output_style = :expanded
-output_style = (environment == :production) ? :compressed : :compact
+ output_style = :compact
+#output_style = (environment == :production) ? :compressed : :compact
 
 # ------------------------------------------------------------------------
 # 상대 경로 지정 설정
