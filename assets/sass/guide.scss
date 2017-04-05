@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import "common/part/reset";
+
+$images: '../img/';
+section{
+  padding: 0 50px 50px; min-width:768px;
+  h2 {padding: 5px; background: #000; color: #fff;}
+}
+
+
+/*label, hidden;*/
+.hidden { overflow: hidden; position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; clip: rect(0,0,0,0); }
+
+/*페이징*/
+
+.paging { margin: 16px 0 0; text-align: center; padding-bottom: 1px;
+  > *{vertical-align: middle}
+  a {
+    overflow: hidden; padding: 0 6px 0 7px; display: inline-block; white-space: nowrap; height: 22px; border: 1px solid #bbb;line-height: 24px; color: #767676;
+    &:hover { border-color: #000 }
+    &.first, &.prev, &.next, &.last { background: url($images + 'btn-pag.gif') 0 0 no-repeat; font-size: 0; padding: 0; height: 24px; }
+    &.first { width: 23px; background-position: 0 0; margin: 0 -5px 0 0; }
+    &.prev { width: 24px; background-position: -23px 0; margin: 0 16px 0 0; }
+    &.next { width: 24px; background-position: -47px 0; margin: 0 -5px 0 12px; }
+    &.last { width: 24px; background-position: -70px 0; margin: 0 0 0 0; }
+  }
+  strong { display:inline-block; padding: 0 6px 0 7px;height: 22px; line-height: 24px; border: solid 1px #111; color: #111; background-color:#000; color: #fff} /*선택*/
+}
+
+
+  /*테이블*/
+
+
+  [class^="table-"] {margin: 5px 0 5px -10px;
+    border-top: 2px solid #b69981;
+    border-bottom: 1px solid #bbb;
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      th {
+        padding: 11px 10px 12px 10px;
+        background-color: #fbf9f5;
+        border-left: 1px solid #dcdcdc;
+        border-top: 1px solid #dcdcdc;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        &:first-child {
+          border-left: 0;
+        }
+      }
+      td {
+        padding: 9px 10px;
+        background-color: #fff;
+        font-size: 13px;
+        line-height: 20px;
+        border-left: 1px solid #dcdcdc;
+        border-top: 1px solid #dcdcdc;
+        word-break: break-all;
+        text-align: center;
+      }
+      td:first-child {
+        border-left: 0;
+      }
+
+      tr:first-child td:first-child {
+        border-left: 0;
+      }
+    }
+  }
+.table-type1 {
+  thead {
+    th {
+      height: 42px;
+      padding: 4px 10px 6px 10px;
+      text-align: center;
+    }
+    tr:first-child th {
+      border-top: 0;
+    }
+  }
+
+
+}
+
+/*
+select*/
+
+input[readonly], textarea[readonly]  {background:#f5f5f5}
+input[disabled]  {background:#ebebe4}
+[type="radio"] + label img {margin-top:-3px; vertical-align:middle}
+select + [type="radio"]{margin-left:15px;}
+
+select, textarea, input[type="text"], input[type="file"] {
+  border: 1px solid #bbb;
+  font-family: MalgunGothic,'맑은 고딕','돋움',Dotum,AppleGothic,Sans-serif,Arial;
+  font-size: 13px;
+  vertical-align: middle;
+}
+select {
+  height: 27px;
+  line-height: 27px;
+}
+input[type="text"], input[type="file"] {
+  line-height: 26px;
+}
+input[type="text"] {
+  padding: 0 1px;
+}
+
+
+[type="checkbox"], [type="radio"] {
+  opacity: 0;
+  outline: 0;
+  margin: -16px -16px 0 0;
+  width: 16px;
+  height: 16px;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  & + label {
+    display: inline-block;
+    padding: 0 0 2px 22px;
+    margin: 0 10px 0 0;
+    line-height: 14px;
+    background: url($images + 'bg_inp.png') no-repeat;
+  }
+}
+
+
+
+[type="radio"]:checked + label { background-position: 0 -56px; }
+[type="checkbox"] + label { background-position: 0 -111px; }
+[type="checkbox"]:checked + label { background-position: 0 -167px; }
+[type="checkbox"]:disabled + label {background-position:0 -284px;}
+[type="checkbox"]:checked:disabled + label{ background-position:0 -394px; }
+.ie8 [type="checkbox"][checked="checked"] + label {background-position:0 -167px;}
+.ie8 [type="checkbox"][disabled="disabled"] + label {background-position:0 -284px;}
+.ie8 [type="checkbox"][disabled="disabled"][checked="checked"] + label{ background-position:0 -394px; }
+
+:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+label {
+  cursor: default;
+}
