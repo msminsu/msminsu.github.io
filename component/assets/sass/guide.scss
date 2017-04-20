@@ -232,8 +232,8 @@ body.gnb-open:after { position: fixed; top: 0; bottom: 0; left: 0; right: 0; con
 
 /*footer*/
 footer{background: #f2f2f2;
-  .notice{ overflow: hidden; display: block;padding: 21px 15px; font-size: 15px;background:#fff;color:#222; box-sizing: border-box; line-height: 1.267em;
-    strong{ position: relative;float: left; display: block;padding-right: 8px; font-size:15px; vertical-align: bottom;
+  .notice{ overflow: hidden; display: block;padding: 23px 15px 22px; font-size: 15px;background:#fff;color:#222; line-height: 1;
+    strong{ position: relative;float: left; display: block;padding-right: 8px; font-size:15px;
       &:after{
         display:block; content:"";
         position:absolute;
@@ -245,7 +245,7 @@ footer{background: #f2f2f2;
         background: #adadad;
       }
     }
-    span{ display:block;min-width: 237px; padding-left: 5px; font-size:14px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; vertical-align: bottom;}
+    span{ display:block;min-width: 237px; padding-left: 5px; font-size:14px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
   }
 
   .family-links{
@@ -281,8 +281,10 @@ footer{background: #f2f2f2;
       background: #797979;
       position: absolute;
       left: -5px;
-      top: 2px;
+      top: 50%;
+      margin-top: -6px;
     }
+    a{ line-height: 1;}
   }
 
 
@@ -290,14 +292,13 @@ footer{background: #f2f2f2;
     ul{border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;overflow:hidden; font-size: 12px; padding:17px 15px;
       li{float:left;padding-right:5px;
         a{
-          display:block; font-size: 9px;padding-left:41px;
-          background: url(../img/guide/bg-footer-logos.png) 0 0 no-repeat;
-          background-size: 37px 72px;
+          display:block; font-size: 9px;
+          line-height:1.4;
           img{float:left; height: 24px; margin-top: 3px;padding-right: 4px;}
         }
-        &:nth-child(1) a{     background-position: -1px 1px;}
-        &:nth-child(2) a{ background-position:0 -24px;}
-        &:nth-child(3) a{ background-position:-1px -49px;}
+        &:nth-child(1) a{ }
+        &:nth-child(2) a{ }
+        &:nth-child(3) a{ }
       }
     }
   }
