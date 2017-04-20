@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*
+ * @ reset
+ * -------------------------------------
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, select, textarea,input {margin:0; padding:0; border:0;}
+
+ul, ol, li{list-style:none;}
+body { font-family: Sans-serif; font-size:13px; line-height:1.2; color:#666;letter-spacing:-.05em; font-size-adjust:none; word-break:break-all;-webkit-tap-highlight-color:transparent; }
+h1,h2,h3,h4,h5,h6{ line-height:1.2;}
+em{font-style:normal;}
+p{ margin-bottom:10px; line-height:1.2;}
+p:last-child{ margin-bottom:0;}
+img{ max-width:100%;}
+input,select{ -webkit-appearance:none; background:transparent; -webkit-border-radius:0; border-radius:0; }
+textarea{ -webkit-appearance:none; background:transparent; -webkit-border-radius:0; border-radius:0; resize:none;}
+em {font-style:normal;}
+img, fieldset {vertical-align: top;}
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* 아이폰 가로모드시 글씨 커지는 문제 */
+* {-webkit-text-size-adjust:none;}
+/* 아이폰 input 박스선 없애기 */
+input[type="text"],input[type="password"],input[type="email"],input[type="search"],input[type="image"],input[type="tel"],input[type="number"], textarea{-webkit-appearance:none;-webkit-border-radius:0;}
