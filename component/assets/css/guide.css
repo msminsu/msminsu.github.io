@@ -83,7 +83,7 @@ hr { border: none; padding: 20px; }
 header { padding: 18px 15px; z-index: 1; background: #000; }
 header h1 a { display: block; width: 62px; height: 21px; background-position: 0 0; color: transparent; }
 header .btn-alert { overflow: visible; display: block; position: absolute; top: 18px; right: 90px; width: 27px; height: 23px; background-position: -66px 0px; }
-header .btn-alert span { display: block; position: absolute; top: -7px; right: -7px; min-width: 15px; background: #e6303c; color: #000; text-align: center; font-size: 10px; line-height: 1; padding: 2px 0 3px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+header .btn-alert span { display: block; position: absolute; top: -7px; right: -7px; min-width: 15px; height: 15px; background: #e6303c; color: #000; text-align: center; font-size: 10px; line-height: 15px; padding: 0 5px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; font-family: HelveticaNeue,AppleSDGothicNeo,Sans-serif; box-sizing: border-box; }
 header .btn-srch { display: block; position: absolute; top: 18px; right: 54px; width: 22px; height: 22px; background-position: -98px 0px; }
 header .btn-total-open { display: block; position: absolute; top: 18px; right: 17px; width: 22px; height: 22px; background-position: -126px 1px; }
 header nav { background: url(../img/guide/bg-gnb.gif) no-repeat #fff 0 0; background-size: 340px 140px; position: fixed; top: 0; right: 0; bottom: 0; width: 320px; -webkit-transform: translate3d(320px, 0, 0); transform: translate3d(320px, 0, 0); z-index: 1000; padding: 20px 0 0 0; -webkit-transition: all 0.5s; transition: all 0.5s; }
