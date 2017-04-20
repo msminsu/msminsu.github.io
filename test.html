@@ -2,49 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <!-- 바로가기 이미지 사용 -->
-    <link rel="apple-touch-icon" href="./icon.png" /><!-- 아이폰이 제공하는 기본 UI 사용시-->
-    <!--<link rel="apple-touch-icon-precomposed" href="./icon.png" />--><!-- 아이폰이 제공하는 UI 처리 사용안할 때 -->
-    <link rel="shortcut icon" href="./icon.png" /><!-- 안드로이드 바로가기 아이콘-->
-    <!--
-    아이폰은 57×57 , 아이패드, 안드로이드 72×72, 아이폰4는 114×114 사이즈의 png 이미지를 사용하며,
-    가능하면 114×114 이미지로 만들어두면 아이폰에서 자동으로 크기 리사이즈를 해줌.
-    -->
-
+    <link rel="apple-touch-icon" href="./icon.png" />
+    <link rel="shortcut icon" href="./icon.png" />
     <title>Title</title>
     <style>
-        .active-element{
-            border: 1px solid red;
-            padding: 20px;
-            background: gray;
-        }
-        .fake-active{
-            background: red;
-        }
+    *{ margin: 0; padding: 0;}
+    li{list-style:none; border:1px solid #333; height: 100px; vertical-align: middle;}
+    input[type="radio"],input[type="checkbox"]{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        width: 17px;
+        height: 17px;
+        position: absolute;
+
+    }
+
+    input[type="checkbox"]+label{
+        display: inline-block;
+        z-index: 1;
+        padding:0 0 0 27px;
+        background:  url(./test/input_check_default.gif) 0 0 no-repeat;
+
+    }
+    input[type="checkbox"]:checked+label{
+        padding:0 0 0 27px;
+        background:  url(./test/input_check_selected.gif) 0 0 no-repeat;
+
+    }
     </style>
 </head>
 <body>
-<div class="active-element">테스트용 페이지</div>
+<input type="radio" name="yn" id="radio1"><label for="radio1">Yes</label><input type="radio" name="yn" id="radio2"><label for="radio2">No</label>
+<input type="checkbox" id="check1"><label for="check1">맥주</label><input type="checkbox" id="check2"><label for="check2">치킨</label>
 </body>
-<script src="https://code.jquery.com/jquery-2.0.3.js"></script>
+<script src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/jquery.easing.1.3.js"></script>
+<script src="./lab/extend.js"></script>
 <script>
-    $('.active-element').on({ 'touchstart' : function () { $(this).addClass('fake-active'); }, 'touchend' : function () { $(this).removeClass('fake-active'); } });
-
-    var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보
-
-
-    // 모바일 홈페이지 바로가기 링크 생성
-    /*if(userAgent.match('iphone')) {
-     document.write('<link rel="apple-touch-icon" href="/이미지경로/icon.png" />')
-     } else if(userAgent.match('ipad')) {
-     document.write('<link rel="apple-touch-icon" sizes="72*72" href="/이미지경로/icon.png" />')
-     } else if(userAgent.match('ipod')) {
-     document.write('<link rel="apple-touch-icon" href="/이미지경로/icon.png" />')
-     } else if(userAgent.match('android')) {
-     document.write('<link rel="shortcut icon" href="/이미지경로/icon.png" />')
-     }*/
 
 </script>
 </html>

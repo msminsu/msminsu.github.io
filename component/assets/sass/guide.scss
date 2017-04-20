@@ -232,7 +232,7 @@ body.gnb-open:after { position: fixed; top: 0; bottom: 0; left: 0; right: 0; con
 
 /*footer*/
 footer{background: #f2f2f2;
-  .notice{ overflow: hidden; display: block;padding: 21px 15px; font-size: 15px;background:#fff;color:#222;
+  .notice{ overflow: hidden; display: block;padding: 21px 15px; font-size: 15px;background:#fff;color:#222; box-sizing: border-box;
     strong{ position: relative;float: left; display: block;padding-right: 8px; font-size:15px;
       &:after{
         display:block; content:"";
