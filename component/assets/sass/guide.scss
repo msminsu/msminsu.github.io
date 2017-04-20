@@ -87,8 +87,8 @@ header{padding: 18px 15px; z-index: 1; background: #000;
     color:transparent;
   }
   .btn-alert{@extend %ico-ally; overflow: visible; display: block; position: absolute; top: 18px; right: 90px; width:27px; height: 23px; background-position: -66px 0px;
-    span{ display:block; position:absolute; top: -7px; right:-7px; min-width:15px; height:15px; background:#e6303c; color:#fff; text-align:center;
-      font-size:10px; line-height:14px;
+    span{ display:block; position:absolute; top: -7px; right:-7px; min-width:15px; background:#e6303c; color:#fff; text-align:center;
+      font-size:10px; line-height:1; padding:2px 0 3px;
       -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px;
     }
   }
