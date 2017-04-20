@@ -80,12 +80,12 @@
   <!-- header -->
   <header>
     <h1><a href="#none" class="ico-ally">KT <span>개인</span></a></h1>
-    <a href="#none" class="btn-alert ico-ally">알림 <span>3</span></a>
-    <a href="#none" class="btn-srch ico-ally">검색</a>
+    <a href="#none" class="btn-alert"><span class="invisible">알림</span><i class="icon-comment-alt"></i><strong>3</strong></a>
+    <a href="#none" class="btn-srch"><span class="invisible">검색</span><i class="icon-search"></i></a>
     <!--<a href="#none" class="ico-srch"><span class="ally">검색</span></a>-->
-    <a href="#none" class="btn-total-open  ico-ally">전체 메뉴보기</a>
-    <nav>
-      <h2>전체 메뉴</h2>
+    <a href="#none" class="btn-total-open"><span class="invisible">전체 메뉴보기</span><i class="icon-reorder"></i></a>
+    <nav class="open">
+      <h2 class="invisible">전체 메뉴</h2>
       <ul class="list-channel">
         <li class="current"><a href="#none">개인</a></li>
         <li><a href="#none" title="KT 기업 페이지로 이동" target="_blank">기업</a></li>
@@ -155,7 +155,7 @@
           </ul>
         </li>
       </ul>
-      <a href="#none" class="btn-total-close">전체메뉴 닫기</a>
+      <a href="#none" class="btn-total-close"><span class="invisible">전체메뉴 닫기</span><i class="icon-remove"></i></a>
     </nav>
   </header>
   <!-- /header  -->
@@ -171,15 +171,22 @@
     <a href="#none" class="notice">
       <strong>공지</strong><span> 세계 최초 인공지는 TV '기가 지니' 출시</span>
     </a>
+
     <div class="family-links">
-      <label for="sns-channel">sns 채널</label>
-      <select id="sns-channel">
-        <option value="1">SNS 채널</option>
-      </select>
-      <label for="family-site">패밀리 사이트</label>
-      <select id="family-site">
-        <option value="1">패밀리사이트</option>
-      </select>
+      <div class="box">
+        <label for="sns-channel" class="invisible">sns 채널</label>
+        <select id="sns-channel">
+          <option value="1">SNS 채널</option>
+        </select>
+        <i class="icon-chevron-down"></i>
+      </div>
+      <div class="box">
+        <label for="family-site" class="invisible">패밀리 사이트</label>
+        <select id="family-site">
+          <option value="1">패밀리사이트</option>
+        </select>
+        <i class="icon-chevron-down"></i>
+      </div>
     </div>
     <div class="list-quick-01">
       <ul>
@@ -191,14 +198,13 @@
     </div>
     <div class="list-quick-02">
       <ul>
-        <li><a href="#none" title="새창 열림" target="_blank"><img src="./assets/img/ico-quick1.png" alt="KCSI로고"><span>초고속 인터넷 1위<br/>IPTV 1위</span></a></li>
-        <li><a href="#none" title="새창 열림" target="_blank"><img src="./assets/img/ico-quick2.png" alt="웹접근성 마크"><span>미래차조과학부<br/>웹접근성인증</span></a></li>
-        <li><a href="#none" title="새창 열림" target="_blank"><img src="./assets/img/ico-quick1.png" alt="KCSI로고"><span>이동통신 1윌<br/>인터넷 1위</span></a></li>
+        <li><a href="#none" title="새창 열림" target="_blank"><span>초고속 인터넷 1위<br/>IPTV 1위</span></a></li>
+        <li><a href="#none" title="새창 열림" target="_blank"><span>미래차조과학부<br/>웹접근성인증</span></a></li>
+        <li><a href="#none" title="새창 열림" target="_blank"><span>이동통신 1윌<br/>인터넷 1위</span></a></li>
       </ul>
 
     </div>
     <address>
-      텍스트 내용입니다.
       (주)케이티 대표이사 황창규 <br>
       사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048<br>
       고객센터 : [모바일] 휴대폰+114(무료), 1588-0010(유료)<br>

@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'icon-kt';
+  src:  url('../fonts/icon-kt.eot?in0r9y');
+  src:  url('../fonts/icon-kt.eot?in0r9y#iefix') format('embedded-opentype'),
+  url('../fonts/icon-kt.ttf?in0r9y') format('truetype'),
+  url('../fonts/icon-kt.woff?in0r9y') format('woff'),
+  url('../fonts/icon-kt.svg?in0r9y#icon-kt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-kt' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#fff;
+}
+
+.icon-remove:before {
+  content: "\e909";
+}
+.icon-comment-alt:before {
+  content: "\e908"; font-size:22px;
+}
+.icon-angle-down:before {
+  content: "\e900";
+}
+.icon-angle-right:before {
+  content: "\e901";
+}
+.icon-arrow-left:before {
+  content: "\e902";
+}
+.icon-chevron-down:before {
+  content: "\e903";
+}
+.icon-nav:before {
+  content: "\e904";
+}
+.icon-reorder:before {
+  content: "\e905"; font-size:17px;
+}
+.icon-search:before {
+  content: "\e906"; font-size:22px;
+}
+.icon-logo:before {
+  content: "\e907";
+}
+
