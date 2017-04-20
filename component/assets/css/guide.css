@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 ul, ol, li { list-style: none; }
 
-body { font-family: Sans-serif; font-size: 13px; line-height: 1.2; color: #666; letter-spacing: -.05em; font-size-adjust: none; word-break: break-all; -webkit-tap-highlight-color: transparent; }
+body { font-family: Sans-serif; font-size: 13px; line-height: 1.2; color: #666; letter-spacing: -0.02em; font-size-adjust: none; word-break: break-all; -webkit-tap-highlight-color: transparent; }
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.2; }
 
@@ -82,11 +82,10 @@ hr { border: none; padding: 20px; }
 /*header*/
 header { padding: 18px 15px; z-index: 1; background: #000; }
 header h1 a { display: block; width: 62px; height: 21px; background-position: 0 0; color: transparent; }
-header .btn-alert { overflow: visible; display: block; position: absolute; top: 19px; right: 105px; width: 27px; height: 23px; background-position: -66px 0px; }
-header .btn-alert span { display: block; position: absolute; top: -7px; right: -7px; min-width: 15px; height: 15px; background: #e6303c; color: #fff; text-align: center; font-size: 10px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
-header .btn-alert span:before { display: inline-block; content: ""; height: 100%; vertical-align: middle; }
-header .btn-srch { display: block; position: absolute; top: 19px; right: 60px; width: 22px; height: 22px; background-position: -98px 0px; }
-header .btn-total-open { display: block; position: absolute; top: 19px; right: 17px; width: 22px; height: 22px; background-position: -130px 0px; }
+header .btn-alert { overflow: visible; display: block; position: absolute; top: 18px; right: 90px; width: 27px; height: 23px; background-position: -66px 0px; }
+header .btn-alert span { display: block; position: absolute; top: -7px; right: -7px; min-width: 15px; height: 15px; background: #e6303c; color: #fff; text-align: center; font-size: 10px; line-height: 14px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+header .btn-srch { display: block; position: absolute; top: 18px; right: 54px; width: 22px; height: 22px; background-position: -98px 0px; }
+header .btn-total-open { display: block; position: absolute; top: 18px; right: 17px; width: 22px; height: 22px; background-position: -126px 1px; }
 header nav { background: url(../img/guide/bg-gnb.gif) no-repeat #fff 0 0; background-size: 340px 140px; position: fixed; top: 0; right: 0; bottom: 0; width: 320px; -webkit-transform: translate3d(320px, 0, 0); transform: translate3d(320px, 0, 0); z-index: 1000; padding: 20px 0 0 0; -webkit-transition: all 0.5s; transition: all 0.5s; }
 header nav .list-channel { overflow: hidden; position: relative; margin-left: 20px; }
 header nav .list-channel li { float: left; position: relative; font-size: 17px; opacity: .5; }
@@ -119,3 +118,26 @@ body.gnb-open { height: 100%; overflow: hidden; }
 body.gnb-open:after { position: fixed; top: 0; bottom: 0; left: 0; right: 0; content: ''; background: rgba(0, 0, 0, 0.7); z-index: 100; }
 
 /*footer*/
+footer { background: #f2f2f2; }
+footer .notice { overflow: hidden; display: block; padding: 22px 20px; font-size: 15px; background: #fff; }
+footer .notice strong { position: relative; float: left; display: block; padding-right: 8px; }
+footer .notice strong:after { display: block; content: ""; position: absolute; height: 15px; width: 1px; background: #797979; position: absolute; right: 0; top: 50%; margin-top: -8px; }
+footer .notice span { display: block; min-width: 237px; padding-left: 5px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+footer .family-links { border-top: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; }
+footer .family-links:after { clear: both; display: block; content: ""; }
+footer .family-links select { float: left; width: 50%; padding: 16px 16px 16px 20px; border: none; -webkit-appearance: none; background: url(../img/guide/ico-arrow.png) 95% 50% no-repeat; background-size: 12px 7px; background-color: #ededed; }
+footer .family-links select:first-child { border-right: 1px solid #dcdcdc; }
+footer .list-quick-01 ul, footer .list-quick-02 ul { overflow: hidden; font-size: 12px; padding: 25px 17px; }
+footer .list-quick-01 ul li, footer .list-quick-02 ul li { float: left; padding-right: 20px; }
+footer .list-quick-01 ul li a, footer .list-quick-02 ul li a { color: #020202; }
+footer .list-quick-01 ul li { position: relative; float: left; padding-left: 10px; padding-right: 10px; }
+footer .list-quick-01 ul li:first-child { padding-left: 0; }
+footer .list-quick-01 ul li:first-child:after { display: none; }
+footer .list-quick-01 ul li:after { display: block; content: ''; height: 12px; width: 1px; background: #797979; position: absolute; left: 0; top: 50%; margin-top: -5px; }
+footer .list-quick-02 ul { border-top: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; overflow: hidden; font-size: 12px; padding: 25px 17px; }
+footer .list-quick-02 ul li { float: left; padding-right: 13px; }
+footer .list-quick-02 ul li a { display: block; font-size: 9px; margin-right: 15px; }
+footer .list-quick-02 ul li a img { float: left; height: 24px; margin-top: 3px; padding-right: 4px; }
+footer .list-quick-02 ul li a span { float: left; display: block; }
+footer address { padding: 22px 22px 22px 19px; font-style: normal; font-size: 11px; color: #7a7a7a; }
+footer .btn-gopc { display: block; margin-top: 22px; padding: 12px; border: 1px solid #dcdcdc; font-size: 13px; text-align: center; }
