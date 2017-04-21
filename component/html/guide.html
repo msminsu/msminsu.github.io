@@ -79,92 +79,359 @@
 
   <!-- header -->
   <header>
-    <h1><a href="#none" class="ico-ally">KT <span>개인</span></a></h1>
-    <a href="#none" class="btn-alert"><span class="invisible">알림</span><i class="icon-comment-alt"></i><strong>3</strong></a>
-    <a href="#none" class="btn-srch"><span class="invisible">검색</span><i class="icon-search"></i></a>
-    <!--<a href="#none" class="ico-srch"><span class="ally">검색</span></a>-->
-    <a href="#none" class="btn-total-open"><span class="invisible">전체 메뉴보기</span><i class="icon-reorder"></i></a>
-    <nav class="open1">
-      <h2 class="invisible">전체 메뉴</h2>
+    <h1><a href="#" class="ico-ally">KT <span>개인</span></a></h1>
+    <a href="#" class="btn-alert"><span class="invisible">알림</span><i class="icon-comment-alt"></i><strong>3</strong></a>
+    <a href="#" class="btn-srch"><span class="invisible">검색</span><i class="icon-search"></i></a>
+    <!--<a href="#" class="ico-srch"><span class="ally">검색</span></a>-->
+    <a href="#" class="btn-total-open"><span class="invisible">전체 메뉴보기</span><i class="icon-reorder"></i></a>
+    <nav class="open">
+      <h2 class="invisible">주메뉴</h2>
       <ul class="list-channel">
-        <li class="current"><a href="#none">개인</a></li>
-        <li><a href="#none" title="KT 기업 페이지로 이동" target="_blank">기업</a></li>
-        <li><a href="#none" title="KT 회사소개 페이지로 이동" target="_blank">회사소개</a></li>
+        <li class="current"><a href="#">개인</a></li>
+        <li><a href="#" title="KT 기업 페이지로 이동" target="_blank">기업</a></li>
+        <li><a href="#" title="KT 회사소개 페이지로 이동" target="_blank">회사소개</a></li>
       </ul>
       <ul class="list-utils">
-        <li><a href="#none">로그아웃</a></li>
-        <li><a href="#none">사용량조회</a></li>
-        <li><a href="#none">소액결제</a></li>
-        <li><a href="#none">매장찾기</a></li>
+        <li><a href="#"><i class="icon-logout"></i>로그아웃</a></li>
+        <li><a href="#"><i class="icon-usage"></i>사용량조회</a></li>
+        <li><a href="#"><i class="icon-payment"></i>소액결제</a></li>
+        <li><a href="#"><i class="icon-find-store"></i>매장찾기</a></li>
       </ul>
       <div id="gnb">
         <ul class="category">
-          <li class="current"><a href="#none"><strong>김민*님</strong>의 <span>맞춤메뉴</span></a></li>
-          <li><a href="#none">마이페이지</a>
-            <ul>
-              <li><a href="#none">요금명세서조회 <span>상품/서비스&gt;모바일</span></a></li>
-              <li><a href="#none">기가인터넷사용량조회 <span>상품/서비스&gt;모바일</span></a></li>
-              <li><a href="#none">이용중인 부가서비스<span>마이페이지</span></a></li>
-              <li><a href="#none">매장찾기/안내<span>고객센터 &gt; 매장찾기/안내</span></a></li>
-            </ul>
-          </li>
-          <li><a href="#none">상품/서비스</a>
-            <ul>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-            </ul>
-          </li>
-          <li><a href="#none">멤버십/혜택</a>
-            <ul>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-            </ul>
-          </li>
-          <li><a href="#none">이벤트</a>
-            <ul>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-            </ul>
-          </li>
-          <li><a href="#none">고객센터</a>
-            <ul>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-            </ul>
-          </li>
-          <li><a href="#none">KT shop</a>
-            <ul>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-              <li><a href="#none"></a></li>
-            </ul>
-          </li>
+          <li class="active"><a href="#"><strong>김민*님</strong>의 <span>맞춤메뉴<i class="icon-like"></i></span></a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">상품/서비스</a></li>
+          <li><a href="#">멤버십/혜택</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">KT shop</a></li>
         </ul>
-        <ul class="category-depth"></ul>
+        <div class="category-depth">
+          <ul class="depth02">
+            <li><a href="#">요금명세서조회 <span>상품/서비스 &gt; 모바일</span></a></li>
+            <li><a href="#">기가인터넷사용량조회 <span>상품/서비스 &gt; 모바일</span></a></li>
+            <li><a href="#">이용중인 부가서비스<span>마이페이지</span></a></li>
+            <li><a href="#">매장찾기/안내<span>고객센터 &gt; 매장찾기/안내</span></a></li>
+          </ul>
+          <ul class="depth02 active">
+            <li><a href="#">모바일<i class="icon-angle-down"></i></a>
+              <ul class="depth03 active">
+                <li><a href="#">요금제<i class="icon-plus"></i></a></li>
+                <li><a href="#">부가서비스<i class="icon-plus"></i></a></li>
+                <li class="active"><a href="#">Egg/WiFi<i class="icon-minus"></i></a>
+                  <ul class="depth04">
+                    <li><a href="#">납부방법 변경</a></li>
+                    <li><a href="#">가상계좌 신청/변경</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">로밍<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">모바일전용서비스<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">인공지능<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">인터넷<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">기가IoT<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">TV<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">전화<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">국제전화<i class="icon-angle-down"></i></a></li>
+            <li><a href="#">결합상품<i class="icon-angle-down"></i></a></li>
+          </ul>
+          <ul class="depth02"></ul>
+          <ul class="depth02"></ul>
+          <ul class="depth02"></ul>
+          <ul class="depth02"></ul>
+          <ul class="depth02"></ul>
+        </div>
       </div>
-      <a href="#none" class="btn-total-close"><span class="invisible">전체메뉴 닫기</span><i class="icon-remove"></i></a>
+      <a href="#" class="btn-total-close"><span class="invisible">전체메뉴 닫기</span><i class="icon-remove"></i></a>
     </nav>
   </header>
   <!-- /header  -->
 
   <!-- contents -->
   <div id="contents">
+    <section class="key-visual">
+      <ul>
+        <li><a href=""></a></li>
+      </ul>
+    </section>
+    <section class="acc-mypage">
+      <h3>
+        <button type="button">마이페이지<span>펼치기</span></button>
+      </h3>
+      <div class="container">
+        <!-- 로그아웃 -->
+        <div class="logout-area inner-box">
+          <a href="#" class="btn-login">로그인</a>
+          <dl>
+            <dt>로그인 없이 핸드폰 인증으로</dt>
+            <dd>
+              <a href="#" class="btn-lookup">사용량/요금/멤버십
+                <strong>간편조회</strong>
+              </a>
+            </dd>
+            <dd>
+              <a href="#" class="btn-join">부가서비스
+                <strong>간편가입</strong>
+              </a>
+            </dd>
+          </dl>
+          <ul class="list-myutils">
+            <li><a href="#">요금조회/납부</a></li>
+            <li><a href="#">사용량조회</a></li>
+            <li><a href="#">요금제</a></li>
+            <li><a href="#">로밍신청</a></li>
+            <li><a href="#">소액결제내역</a></li>
+            <li><a href="#">부가서비스</a></li>
+          </ul>
+        </div>
+        <!-- /로그아웃  -->
+        <!-- 로그인 -->
+        <div class="login-area  inner-box">
+          <div class="name"><strong>홍길*</strong>님, 반갑습니다.</div>
+          <div class="my-info">
+            <div class="my-num"><strong>010.4252.152*</strong><a href="#" class="ally">더보기</a></div>
+            <div class="my-update"> 2017.02.20 17:14 <a href="#" class="ally">업데이트</a></div>
+          </div>
+          <div class="my-area">
+            <div class="my-data">
+              <strong class="my-join">순 모두 다 올레 41</strong>
+              <div class="my-graph">
+                <span class="default">데이터 기본제공 <strong>2.5GB</strong></span>
+              </div>
+              <span class="use-data">사용<strong>1.88GB</strong></span>
+              <span class="remain">잔여<strong>0.62GB</strong></span>
+              <span class="call-residue"><strong>통화</strong><em>42분</em>/250분</span>
+              <a href="#" class="btn-white">데이터 충천</a>
+            </div>
 
+            <div class="my-service">
+              <span class="real-price"><strong>실시간요금</strong> <em>140,340</em>원</span>
+              <dl>
+                <dt>멤버십</dt>
+                <dd class="my-grade">등급<em>GOLD</em></dd>
+                <dd class="my-point">포인트 <em>98,868</em></dd>
+              </dl>
+              <a href="#" class="btn-white">카드 정보 조회</a>
+              <a href="#" class="btn-white">멤버십 혜택 안내</a>
+            </div>
+          </div>
+        </div>
+        <!-- /로그아웃  -->
+        <a href="#" class="btn-line-top">마이페이지 바로가기</a>
+      </div>
+    </section>
+    <section class="acc-product">
+      <h3>
+        <button type="button">상품/서비스<span>펼치기</span></button>
+      </h3>
+      <div class="container">
+        <div class="inner-box">
+          <strong>새학기엔 역시! 청소년을 위한 혜택</strong>
+          <div class="slider">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/@sample1.jpg" alt="성소 이미지">
+                  <dl>
+                    <dt class="pro-tit">Y24 요금제</dt>
+                    <dd class="pro-sub">만 24세 이하를 위한 요금</dd>
+                    <dd class="pro-price">월<strong>32,890</strong>원</dd>
+                  </dl>
+                  <i>핸드폰</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/@sample2.jpg" alt="핸드폰 이미지">
+                  <dl>
+                    <dt class="pro-tit">올레 tv 모바일팩</dt>
+                    <dd class="pro-sub">실시간 방송과 고화질 VOD</dd>
+                    <dd class="pro-price">월<strong>5,500</strong>원</dd>
+                  </dl>
+                  <i>TV</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/@sample1.jpg" alt="성소 이미지">
+                  <dl>
+                    <dt class="pro-tit">Y24 요금제</dt>
+                    <dd class="pro-sub">만 24세 이하를 위한 요금</dd>
+                    <dd class="pro-price">월<strong>32,890</strong>원</dd>
+                  </dl>
+                  <i>핸드폰</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/@sample2.jpg" alt="핸드폰 이미지">
+                  <dl>
+                    <dt class="pro-tit">올레 tv 모바일팩</dt>
+                    <dd class="pro-sub">실시간 방송과 고화질 VOD</dd>
+                    <dd class="pro-price">월<strong>5,500</strong>원</dd>
+                  </dl>
+                  <i>TV</i>
+                </a>
+              </li>
+            </ul>
+            <div class="slider-dot">
+              <a href="#" title="현재 슬라이더" class="current">1</a>
+              <a href="#">2</a>
+            </div>
+          </div>
+
+        </div>
+        <a href="#" class="btn-line-top">상품/서비스 바로가기</a>
+      </div>
+    </section>
+    <section class="acc-membership">
+      <h3>
+        <button type="button">멤버십/혜택<span>펼치기</span></button>
+      </h3>
+      <div class="container">
+        <div class="inner-box">
+          <div class="tab-menu">
+            <a href="#" class="current">더블할인 멤버십</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+          </div>
+          <div class="tab-con">
+            <ul>
+              <li><a href="#"><img src="./assets/img/@tab1.jpg"
+                                       alt="더블할인 멤버십 시즌1 모든 고객이 원하는날, 2배 할인을 받을 수 있는 혜택"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="btn-line-top">멤버십/혜택 바로가기</a>
+      </div>
+    </section>
+    <section class="acc-ktshop">
+      <h3>
+        <button type="button">KT Shop <span>펼치기</span></button>
+      </h3>
+      <div class="container">
+        <div class="inner-box">
+          <div class="slider">
+            <ul>
+              <li>
+                <a href="#">
+                  <dl role="text">
+                    <dt class="pro-tit">갤럭시 S7 edge</dt>
+                    <dd class="pro-sub">지금 KT Shop에서 만나보세요.</dd>
+                    <dd class="view-detail">자세히 보기</dd>
+                  </dl>
+                </a>
+                <div><img src="./assets/img/@slider1.jpg" alt="상품 이미지"></div>
+              </li>
+              <li style="display:none;">
+                <a href="#">
+                  <dl role="text">
+                    <dt class="pro-tit">갤럭시 S7 edge</dt>
+                    <dd class="pro-sub">지금 KT Shop에서 만나보세요.</dd>
+                    <dd class="view-detail">자세히 보기</dd>
+                  </dl>
+                </a>
+                <div><img src="./assets/img/@slider1.jpg" alt="상품 이미지"></div>
+              </li>
+            </ul>
+            <div class="slider-dot">
+              <a href="#" title="현재 슬라이더" class="current">1</a>
+              <a href="#">2</a>
+            </div>
+          </div>
+          <div class="ticket">
+            <dl>
+              <dt>함께 쓰면 좋은 요금제/부가서비스</dt>
+              <dd>LTEi>76.8</em></dd>
+              <dd>미디어 팩 <a href="#">간편가입</a></dd>
+            </dl>
+            <a href="#" class="btn-more">+</a>
+          </div>
+        </div>
+        <a href="#" class="btn-line-top">KT Shop 바로가기 </a>
+      </div>
+    </section>
+    <section class="acc-event">
+      <h3>
+        <button type="button">이벤트<span>펼치기</span></button>
+      </h3>
+      <div class="container">
+        <div class="inner-box">
+          <div class="slider">
+            <ul>
+              <li>
+                <img src="./assets/img/@thum1.jpg" alt="여행">
+                <dl>
+                  <dt class="evt-tit">데이터로밍<br/>하루종일 무료!</dt>
+                  <dd class="evt-date"><span>기간</span>2017. 03. 18 ~ 03. 20</dd>
+                </dl>
+                <a href="#">자세히 보기</a>
+              </li>
+              <li class="ico-new">
+                <img src="./assets/img/@thum2.jpg" alt="영화">
+                <dl>
+                  <dt class="evt-tit">파도가 지나간 자리<br/>예매권 이벤트</dt>
+                  <dd class="evt-date"><span>기간</span>2017. 03. 18 ~ 03. 20</dd>
+                </dl>
+                <a href="#">자세히 보기</a>
+              </li>
+              <li>
+                <img src="./assets/img/@thum1.jpg" alt="여행">
+                <dl>
+                  <dt class="evt-tit">데이터로밍<br/>하루종일 무료!</dt>
+                  <dd class="evt-date"><span>기간</span>2017. 03. 18 ~ 03. 20</dd>
+                </dl>
+                <a href="#">자세히 보기</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <a href="#" class="btn-line-top">이벤트 바로가기</a>
+      </div>
+    </section>
+    <section class="acc-customer">
+      <h3>
+        <button type="button">고객센터<span>펼치기</span></button>
+      </h3>
+      <div class="container">
+        <div class="inner-box">
+          <label for="sel-shop">매장선택</label>
+          <select id="sel-shop">
+            <option>매장선택</option>
+          </select>
+          <label for="src-text">매장 검색어 입력</label>
+          <input id="src-text" type="text" placeholder="키워드를 입력하세요.">
+
+          <ul>
+            <li><a href="#">자주하는 질문</a></li>
+            <li><a href="#">매장찾기</a></li>
+            <li><a href="#">고객센터 안내</a></li>
+          </ul>
+          <dl>
+            <dt>서비스 이용 꿀팁</dt>
+            <dd><a href="#">번호이동 요금<br>그것이 알고 싶다!</a></dd>
+            <dd><a href="#">데이터가<br>부족하세요? </a></dd>
+            <dd><a href="#">인터넷 끊김 현상을<br>해결하라! </a></dd>
+            <dd><a href="#">TV시청 중<br>문제가 생겼을 때 </a></dd>
+          </dl>
+
+        </div>
+        <a href="#" class="btn-line-top">상품/서비스 바로가기</a>
+      </div>
+    </section>
   </div>
   <!-- /contents -->
 
   <!--footer-->
   <footer>
-    <a href="#none" class="notice">
+    <a href="#" class="notice">
       <strong>공지</strong><span> 세계 최초 인공지는 TV '기가 지니' 출시</span>
     </a>
 
@@ -186,17 +453,17 @@
     </div>
     <div class="list-quick-01">
       <ul>
-        <li><a href="#none">회사소개</a></li>
-        <li><a href="#none">이용약관</a></li>
-        <li><a href="#none">이용자 피해예방 가이드</a></li>
-        <li><a href="#none">개인정보처리방침</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">이용자 피해예방 가이드</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
       </ul>
     </div>
     <div class="list-quick-02">
       <ul>
-        <li><a href="#none" title="새창 열림" target="_blank"><img src="../assets/img/guide/@ico1.gif" alt=""><span>초고속 인터넷 1위<br/>IPTV 1위</span></a></li>
-        <li><a href="#none" title="새창 열림" target="_blank"><img src="../assets/img/guide/@ico2.png" alt=""><span>미래차조과학부<br/>웹접근성인증</span></a></li>
-        <li><a href="#none" title="새창 열림" target="_blank"><img src="../assets/img/guide/@ico1.gif" alt=""><span>이동통신 1윌<br/>인터넷 1위</span></a></li>
+        <li><a href="#" title="새창 열림" target="_blank"><img src="../assets/img/guide/@ico1.gif" alt=""><span>초고속 인터넷 1위<br/>IPTV 1위</span></a></li>
+        <li><a href="#" title="새창 열림" target="_blank"><img src="../assets/img/guide/@ico2.png" alt=""><span>미래차조과학부<br/>웹접근성인증</span></a></li>
+        <li><a href="#" title="새창 열림" target="_blank"><img src="../assets/img/guide/@ico1.gif" alt=""><span>이동통신 1윌<br/>인터넷 1위</span></a></li>
       </ul>
 
     </div>
@@ -207,7 +474,7 @@
       [인터넷/TV/전화] 유선전화(국번없이) 100, 휴대폰(지역번호)+100<br>
       경기도 성남시 분당구 불정로 90 (정자동)<br>
       Copyright ⓒ 2017 kt corp. All rights reserved.
-      <a href="#none" class="btn-gopc" title="새창열림" target="_blank">PC 버전</a>
+      <a href="#" class="btn-gopc" title="새창열림" target="_blank">PC 버전</a>
     </address>
 
   </footer>

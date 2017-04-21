@@ -38,3 +38,22 @@ img, fieldset {vertical-align: top;}
 * {-webkit-text-size-adjust:none;}
 /* 아이폰 input 박스선 없애기 */
 input[type="text"],input[type="password"],input[type="email"],input[type="search"],input[type="image"],input[type="tel"],input[type="number"], textarea{-webkit-appearance:none;-webkit-border-radius:0;}
+
+/* link */
+a { color:#333; text-decoration:none;}
+a:hover, a:focus, a:active { text-decoration:none; }
+a:visited { color:#333;}
+
+/* table  common */
+table { width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0; border-top:2px solid #b69981; border-bottom:1px solid #d6d6d6; }
+caption { overflow:hidden; width:0; height:0; font-size:0; line-height:0 }
+th { background:#fbf9f5; padding:14px 10px; color:#333; border-left:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6; word-wrap:break-word;}
+td { vertical-align:middle; padding:14px 10px; border-left:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6; word-wrap:break-word;}
+tr th:first-child { border-left:0; }
+tr td:first-child { border-left:0; }
+
+
+/* align */
+.txt-left { text-align:left !important; }
+.txt-right { text-align:right !important; }
+.txt-center { text-align:center !important; }

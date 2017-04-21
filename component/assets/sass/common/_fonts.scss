@@ -24,7 +24,51 @@ i {
   -moz-osx-font-smoothing: grayscale;
   color:#fff;
 }
-
+.icon-cart:before {
+  content: "\e90e";
+}
+.icon-customer:before {
+  content: "\e90f";
+}
+.icon-event:before {
+  content: "\e910";
+}
+.icon-ktshop:before {
+  content: "\e911";
+}
+.icon-like:before {
+  content: "\e912";
+}
+.icon-member:before {
+  content: "\e913";
+}
+.icon-minus:before {
+  content: "\e914";
+}
+.icon-mypage:before {
+  content: "\e915";
+}
+.icon-plus:before {
+  content: "\e916";
+}
+.icon-power:before {
+  content: "\e917";
+}
+.icon-sevice:before {
+  content: "\e918";
+}
+.icon-find-store:before {
+  content: "\e90a";
+}
+.icon-logout:before {
+  content: "\e90b";
+}
+.icon-payment:before {
+  content: "\e90c";
+}
+.icon-usage:before {
+  content: "\e90d";
+}
 .icon-remove:before {
   content: "\e909";
 }
