@@ -11,6 +11,9 @@ body.gnb-open:after { position: fixed; top: 0; bottom: 0; left: 0; right: 0; con
 [class*="acc-"]{
   margin:0 10px;
   background: #fff;
+  h3{ position:relative;
+    >i{ position:absolute; left:15px; top:50%; margin-top:-16px;font-size:32px; z-index:1}
+  }
   .container{/*display:none;*/}
   .inner-box{padding:30px 20px 25px 20px}
   &.current{
@@ -18,7 +21,7 @@ body.gnb-open:after { position: fixed; top: 0; bottom: 0; left: 0; right: 0; con
 
     }
   }
-  button{ position:relative; width: 100%;padding:17px 20px;font-size: 17px; text-align:left; color: #fff;border:none;background-color: #ff5c5c;
+  button{ position:relative; width: 100%;padding:17px 20px  17px 70px;font-size: 17px; text-align:left; color: #fff;border:none;background-color: #ff5c5c;
 
     &:after{
       display: inline-block;

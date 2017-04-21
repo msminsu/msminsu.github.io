@@ -202,9 +202,11 @@ body.gnb-open { height: 100%; overflow: hidden; }
 body.gnb-open:after { position: fixed; top: 0; bottom: 0; left: 0; right: 0; content: ''; background: rgba(0, 0, 0, 0.7); z-index: 100; }
 
 [class*="acc-"] { margin: 0 10px; background: #fff; }
+[class*="acc-"] h3 { position: relative; }
+[class*="acc-"] h3 > i { position: absolute; left: 15px; top: 50%; margin-top: -16px; font-size: 32px; z-index: 1; }
 [class*="acc-"] .container { /*display:none;*/ }
 [class*="acc-"] .inner-box { padding: 30px 20px 25px 20px; }
-[class*="acc-"] button { position: relative; width: 100%; padding: 17px 20px; font-size: 17px; text-align: left; color: #fff; border: none; background-color: #ff5c5c; }
+[class*="acc-"] button { position: relative; width: 100%; padding: 17px 20px  17px 70px; font-size: 17px; text-align: left; color: #fff; border: none; background-color: #ff5c5c; }
 [class*="acc-"] button:after { display: inline-block; content: ""; position: absolute; top: 50%; right: 15px; width: 12px; margin-top: -3px; height: 7px; background-size: 12px 7px; transition: all 0.5s; -webkit-transition: all 0.5s; }
 [class*="acc-"] button span { overflow: hidden; position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; clip: rect(0 0 0 0); }
 [class*="acc-"].current button { padding: 21px 35px 21px 31px; }
