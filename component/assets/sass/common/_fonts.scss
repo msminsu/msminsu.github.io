@@ -25,6 +25,9 @@ i {
   color:#fff;
 }
 
+.icon-checked:before {
+  content: "\e924";
+}
 .icon-phone:before {
   content: "\e922";
 }
@@ -133,8 +136,4 @@ i {
 .icon-sevice:before {
   content: "\e918";
 }
-
-
-
-
 
