@@ -1,14 +1,20 @@
 /*header*/
-header{padding: 18px 15px; z-index: 1; background: #000;
-  h1 a{
-    @extend %ico-ally;
-    display: block;
-    width:62px;
-    height: 21px;
-    background-position: 0 0;
-    color:transparent;
+header{ position:relative;padding: 18px 15px; z-index: 100; background:#fff;
+  &.main{
+    background:none;
+    h1 a{ width:62px;background-position:0 100%;}
+    a>i{color: #fff}
   }
-  .btn-alert{display: block; position: absolute; top: 18px; right: 90px; width:28px; height: 23px; background-position: -66px 0px;
+  h1 a{
+    display: block;
+    width:26px;
+    height: 21px;
+    color:transparent;
+    background:url(../img/common/logo.png) 0 0 no-repeat;
+    background-size:62px 42px;
+  }
+  >a i{color:#222}
+  .btn-alert{display: block; position: absolute; top: 18px; right: 90px; width:28px; height: 23px; background-position: -66px 0px; font-size:22px;
     strong{ display:block; position:absolute; top: -2px; right:-5px; min-width:15px; height:15px; background:#e6303c; color:#fff; text-align:center;
       font-size:10px; line-height:15px; padding:0 5px;
       -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px;
@@ -16,8 +22,8 @@ header{padding: 18px 15px; z-index: 1; background: #000;
       box-sizing:border-box;
     }
   }
-  .btn-srch{display: block; position: absolute; top: 18px; right: 54px; width:22px; height: 22px;}
-  .btn-total-open{display: block; position: absolute; top: 20px; right: 17px; width:22px; height: 22px;}
+  .btn-srch{display: block; position: absolute; top: 18px; right: 54px; width:22px; height: 22px; font-size:22px;}
+  .btn-total-open{display: block; position: absolute; top: 20px; right: 17px; width:22px; height: 22px; font-size:17px;}
 
   nav{
     position: fixed;
@@ -84,9 +90,10 @@ header{padding: 18px 15px; z-index: 1; background: #000;
 
       .category { overflow:auto; position:absolute; top:0; bottom:0; left:-8px;  width:128px; padding-left:8px; padding-bottom:200px;font-size:16px; -webkit-overflow-scrolling: touch;
         li { background:#f0f0fa; margin-bottom:5px;
+          i{margin-left: 6px;color:#222;vertical-align:text-bottom}
           &:first-child {
             a { padding:20px 0 19px 18px;
-              i{margin-left: 6px;color:#d71826;vertical-align:text-bottom}
+              i{color:#d71826;}
             }
           }
 

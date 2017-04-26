@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{ line-height:1.2;}
 em{font-style:normal;}
 p{ margin-bottom:10px; line-height:1.2;}
 p:last-child{ margin-bottom:0;}
-img{ max-width:100%;}
+img{width:100%;}
 input,select{ -webkit-appearance:none; background:transparent; -webkit-border-radius:0; border-radius:0; }
 textarea{ -webkit-appearance:none; background:transparent; -webkit-border-radius:0; border-radius:0; resize:none;}
 em {font-style:normal;}
@@ -40,9 +40,9 @@ img, fieldset {vertical-align: top;}
 input[type="text"],input[type="password"],input[type="email"],input[type="search"],input[type="image"],input[type="tel"],input[type="number"], textarea{-webkit-appearance:none;-webkit-border-radius:0;}
 
 /* link */
-a { color:#333; text-decoration:none;}
+a { color:#222; text-decoration:none;}
 a:hover, a:focus, a:active { text-decoration:none; }
-a:visited { color:#333;}
+a:visited { color:#222;}
 
 /* table  common */
 table { width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0; border-top:2px solid #b69981; border-bottom:1px solid #d6d6d6; }
@@ -57,3 +57,11 @@ tr td:first-child { border-left:0; }
 .txt-left { text-align:left !important; }
 .txt-right { text-align:right !important; }
 .txt-center { text-align:center !important; }
+
+body.gnb-open { height: 100%; overflow: hidden; }
+body.gnb-open header:after { position: fixed; top: 0; bottom: 0; left: 0; right: 0; content: ''; background: rgba(0, 0, 0, 0.7); z-index: 100; }
+
+%red-tri{
+  &{padding-right:11px;}
+  &:after{display:block; content:""; position:absolute; top:50%; right:0; margin-top:-4px; border-left:4px solid #d71826; border-top:4px solid transparent; border-bottom:4px solid transparent}
+}

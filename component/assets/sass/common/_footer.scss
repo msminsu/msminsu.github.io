@@ -1,6 +1,6 @@
 /*footer*/
-footer{background: #f2f2f2;
-  .notice{ overflow: hidden; display: block;padding: 23px 15px 22px; font-size: 15px;background:#fff;color:#222; line-height: 1;
+footer{ position:relative;background: #f2f2f2;
+  .notice{ overflow: hidden; display: block;padding: 23px 15px 22px; font-size: 15px;background:#fff;color:#222; line-height: 1; border-top:1px solid #e5e5e5;
     strong{ position: relative;float: left; display: block;padding-right: 8px; font-size:15px;
       &:after{
         display:block; content:"";
@@ -38,7 +38,7 @@ footer{background: #f2f2f2;
     }
   }
   .list-quick-01 ul li{
-    position:relative;float:left;
+    position:relative;float:left;letter-spacing:-0.13em;
     &:first-child{padding-left:0;
       &:after{display: none}
     }
@@ -61,16 +61,16 @@ footer{background: #f2f2f2;
       li{float:left;padding-right:5px;
         a{
           display:block; font-size: 9px;
-          line-height:1.4;
-          img{float:left; height: 22px; margin-top: 3px;padding-right: 4px;}
+          line-height:1.4; letter-spacing:-0.2em;
+          img{float:left; width:30px;height: 22px;margin-right: 4px;}
         }
         &:nth-child(1) a{ }
-        &:nth-child(2) a{ }
+        &:nth-child(2) a{ img { width:37px; height:24px;} }
         &:nth-child(3) a{ }
       }
     }
   }
 
-  address{ padding: 20px 15px 60px; font-style: normal; font-size: 11px; color: #666}
+  address{ padding: 20px 15px 60px; font-style: normal; font-size: 11px; color: #666; line-height:1.4; letter-spacing:-0.128em;}
   .btn-gopc{ display: block; margin-top: 20px; padding: 12px; border:1px solid #dddddd; font-size: 13px;text-align: center ; color:#888}
 }

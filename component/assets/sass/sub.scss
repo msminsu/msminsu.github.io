@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import "./common/fonts","./common/base","./common/extend";
+@import "./common/header","./common/footer";
+
+.navigater{
+  padding:0 15px;
+  background:#d71826;
+}
