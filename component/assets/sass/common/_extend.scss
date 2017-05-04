@@ -14,11 +14,3 @@
   background-size: 200px 200px;
   background-repeat: no-repeat;
 }
-.invisible {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden
-}

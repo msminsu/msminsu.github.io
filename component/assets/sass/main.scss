@@ -1,8 +1,9 @@
 @charset "UTF-8";
-
-@import "./common/fonts","./common/base","./common/extend";
-@import "./common/header","./common/footer";
-
+/*삼각형*/
+%red-tri{
+  &{padding-right:11px;}
+  &:after{display:block; content:""; position:absolute; top:50%; right:0; margin-top:-4px; border-left:4px solid #d71826; border-top:4px solid transparent; border-bottom:4px solid transparent}
+}
 /*contents*/
 [class*="acc-"]{
   position:relative;margin:0 5px 5px;
@@ -397,16 +398,16 @@
     select{
       position:relative;
       display:table-cell;
-      padding: 0 13px;
+      padding: 0 10px;
       width: 105px;
-      height: 42px;
+      height: 40px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       font-size: 13px;
-      line-height: 42px;
+      line-height: 40px;
       color:#222;
       border: 1px solid #ccc;
-      background: url(../img/common/bg-select.png) #ececec no-repeat 95% 50%;
+      background: url(../img/common/bg-select.png) #ececec no-repeat right 10px top 50%;
       background-size: 8px 5px;
       border-radius: 0px;
       -webkit-appearance: none;
@@ -421,8 +422,8 @@
       padding-left:5px;
       vertical-align:middle;
       width:100%;
-      input { width:100%; padding:7px 13px; font-size:13px; border:1px solid #ccc;
-        height:42px;
+      input { width:100%; padding:7px 10px; font-size:13px; border:1px solid #ccc; color:#222;
+        height:40px;
         line-height:13px;
         -webkit-box-sizing:border-box;
         box-sizing:border-box;
@@ -482,7 +483,7 @@
 
 .banner{ display:block; margin-bottom:30px;}
 
-.btn-line-top{
+.btn-direct{
   padding: 15px 0 ;
   display:block;
   border-top:1px solid #c7c7c7;
@@ -490,7 +491,7 @@
   line-height:1;
   i{ margin-left:8px;color:#222; font-size:11px;}
 }
-
+/*마이페이지 영역안 버튼*/
 .btn-white{
   display:block;
   margin-top: 5px;

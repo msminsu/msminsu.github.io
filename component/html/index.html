@@ -12,6 +12,8 @@
 
   <link rel="apple-touch-icon" href="../assets/img/common/favicon/kt.ico"><!-- 아이폰 바로가기 -->
   <link rel="shortcut icon" type="image/x-icon" href="../assets/img/common/favicon/kt.ico">
+  <link rel="stylesheet" type="text/css" href="../assets/css/icon-font.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 </head>
 <body>
@@ -22,7 +24,6 @@
     <h1><a href="#" class="ico-ally">KT <span>개인</span></a></h1>
     <a href="#" class="btn-alert"><span class="invisible">알림</span><i class="icon-comment-alt"></i><strong>3</strong></a>
     <a href="#" class="btn-srch"><span class="invisible">검색</span><i class="icon-search"></i></a>
-    <!--<a href="#" class="ico-srch"><span class="ally">검색</span></a>-->
     <a href="#" class="btn-total-open"><span class="invisible">전체 메뉴보기</span><i class="icon-reorder"></i></a>
     <nav>
       <h2 class="invisible">주메뉴</h2>
@@ -91,11 +92,14 @@
 
   <!-- contents -->
   <div id="contents">
+
+    <!--메인 슬라이드-->
     <section class="key-visual">
       <ul>
         <li><a href="#"><img src="../assets/img/temp/@main.jpg" alt=""></a></li>
       </ul>
     </section>
+    <!--마이페이지-->
     <section class="acc-mypage">
       <h3>
         <i class="icon-mypage"></i><button type="button">마이페이지<span class="invisible">펼치기</span><i class="icon-chevron-down"></i></button>
@@ -162,9 +166,10 @@
         </div>
         <!-- /로그아웃  -->
         <a href="#" class="banner"><img src="../assets/img/temp/@banner.gif" alt="학원간 막내는 집에 들어왔나? 기가 IoT 홈매니저"></a>
-        <a href="#" class="btn-line-top">마이페이지 바로가기<i class="icon-angle-right2"></i></a>
+        <a href="#" class="btn-direct">마이페이지 바로가기<i class="icon-angle-right2"></i></a>
       </div>
     </section>
+    <!--상품/서비스-->
     <section class="acc-product">
       <h3>
         <i class="icon-sevice"></i><button type="button">상품/서비스<span class="invisible">펼치기</span><i class="icon-chevron-down"></i></button>
@@ -226,9 +231,10 @@
           </div>
 
         </div>
-        <a href="#" class="btn-line-top">상품/서비스 바로가기<i class="icon-angle-right2"></i></a>
+        <a href="#" class="btn-direct">상품/서비스 바로가기<i class="icon-angle-right2"></i></a>
       </div>
     </section>
+    <!--멤버십/혜택-->
     <section class="acc-membership">
       <h3>
         <i class="icon-member"></i><button type="button">멤버십/혜택<span class="invisible">펼치기</span><i class="icon-chevron-down"></i></button>
@@ -251,9 +257,10 @@
             </ul>
           </div>
         </div>
-        <a href="#" class="btn-line-top">멤버십/혜택 바로가기<i class="icon-angle-right2"></i></a>
+        <a href="#" class="btn-direct">멤버십/혜택 바로가기<i class="icon-angle-right2"></i></a>
       </div>
     </section>
+    <!--kt shop-->
     <section class="acc-ktshop">
       <h3>
         <i class="icon-ktshop"></i><button type="button">KT Shop <span class="invisible">펼치기</span><i class="icon-chevron-down"></i></button>
@@ -265,6 +272,13 @@
               <li>
                 <a href="#" class="left-box">
                   <dl role="text">
+                    <!--  a 태그 안에  여러 태크 내용이 있을때  role="text" 속성을 감싸는 태그 지정
+                    아이폰 voice over 사용시 (안드로이드는 전체 링크로 익힘)
+                    아이폰에서 하나의 텍스트 링크로 읽어줌
+                    비 사용시 각각의 항목의 링크로 읽힘
+                    ex) 갤럭시 S7 edge 링크, 지금 KT Shop에서 만나보세요. 링크, 자세히 보기 링크
+                    role="text" 사용시  갤럭시 S7 edge  지금 KT Shop에서 만나보세요. 자세히 보기 링크
+                    -->
                     <dt class="pro-tit">갤럭시 S7 edge</dt>
                     <dd class="pro-sub">지금 KT Shop에서 만나보세요.</dd>
                     <dd class="view-detail">자세히 보기</dd>
@@ -297,9 +311,10 @@
             <a href="#" class="btn-more"><span class="invisible">추가하기</span><i class="icon-plus"></i></a>
           </div>
         </div>
-        <a href="#" class="btn-line-top">KT Shop 바로가기<i class="icon-angle-right2"></i></a>
+        <a href="#" class="btn-direct">KT Shop 바로가기<i class="icon-angle-right2"></i></a>
       </div>
     </section>
+    <!--이벤트-->
     <section class="acc-event">
       <h3>
         <i class="icon-event"></i><button type="button">이벤트<span class="invisible">펼치기</span><i class="icon-chevron-down"></i></button>
@@ -336,9 +351,10 @@
           </div>
 
         </div>
-        <a href="#" class="btn-line-top">이벤트 바로가기<i class="icon-angle-right2"></i></a>
+        <a href="#" class="btn-direct">이벤트 바로가기<i class="icon-angle-right2"></i></a>
       </div>
     </section>
+    <!--고객센터-->
     <section class="acc-customer">
       <h3>
         <i class="icon-customer"></i><button type="button">고객센터<span class="invisible">펼치기</span><i class="icon-chevron-down"></i></button>
@@ -393,9 +409,10 @@
           </dl>
 
         </div>
-        <a href="#" class="btn-line-top">상품/서비스 바로가기<i class="icon-angle-right2"></i></a>
+        <a href="#" class="btn-direct">상품/서비스 바로가기<i class="icon-angle-right2"></i></a>
       </div>
     </section>
+
   </div>
   <!-- /contents -->
 
@@ -454,57 +471,6 @@
   <!--<script type="text/javascript" src="../../common/js/jquery-1.11.3.min.js"></script>-->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="../assets/js/ui.js"></script>
-  <script>
-      $(document).ready(function () {
-          $('[class^="acc-"] h3 button').on('click', function () {
-              if($(this).parents('section').hasClass('active')){
-                  $(this).parents('section').removeClass('active');
-              }else{
-                  $(this).parents('section').addClass('active');
-              }
-
-          });
-
-          $('.btn-total-close').on('click', function () {
-              $('body').removeClass('gnb-open');
-              $('nav').removeClass('open');
-
-          });
-
-          $('.btn-total-open').on('click', function () {
-              $('body').addClass('gnb-open');
-              $('nav').addClass('open');
-          });
-
-          $('.accodion li a').on('click', function (e) {
-              var $this = $(this);
-              var current = $this.parent().index();
-
-
-              if ($this.parent().hasClass('active')) {
-                  $this.find('span').text('펼치기');
-                  $this.parent().find('.cont').slideUp(function () {
-                      $('.accodion li').removeClass('active');
-                  });
-
-              } else {
-                  $('.accodion li').find('.cont').slideUp(
-                      function () {
-                          $('.accodion li').removeClass('active');
-                          $('.accodion li a span').text('펼치기');
-                      }
-                  );
-                  $('.accodion li').eq(current).find('.cont').slideDown(
-                      function () {
-                          $('.accodion li').eq(current).addClass('active');
-                          $('.accodion li').eq(current).find('a span').text('접기');
-                      }
-                  );
-
-              }
-          });
-      });
-  </script>
   <!-- /script -->
 </div>
 </body>
