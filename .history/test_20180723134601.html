@@ -9,9 +9,7 @@
     </style>
 </head>
 <body>
-<input id="getCode" type="text" readonly="readonly" value="QWWDS123">
-<a href="#;" class="btn-link-copy">전송</a>
-
+test3
 <a href="amp3.mp3" class="">wav download</a>
 <a href="awav.wav" class="">mp3 download</a>
 <script>
@@ -24,7 +22,9 @@ var pageMain = (function () {
 
     return {
         init: function () {
-            
+            $('body').TopBtn();
+            $('.toggle-caution').Folding({open:true});
+
             var target =$('#getCode');
 
             $('.btn-link-copy').on('click',function(e){
@@ -36,9 +36,13 @@ var pageMain = (function () {
                     }
                 }else {
                     var yourCode = document.getElementById('getCode');
+
                     var range = document.createRange();
+
                     range.selectNode(yourCode);
+
                     window.getSelection().addRange(range);
+
                     document.execCommand('copy');
                     alert('원정대 초대 코드가 복사되었습니다.');
                 }
