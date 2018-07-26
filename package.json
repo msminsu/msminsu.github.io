@@ -1,0 +1,24 @@
+{
+  "name": "msminsu.github.io",
+  "version": "1.0.0",
+  "description": "Tale is a minimal Jekyll theme curated for storytellers. Checkout the demo [here](https://chesterhow.github.io/tale/).",
+  "main": "Untitled-1.js",
+  "dependencies": {
+    "jsdom-quokka-plugin": "^1.0.13",
+    "quokka-jquery-loader": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msminsu/msminsu.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msminsu/msminsu.github.io/issues"
+  },
+  "homepage": "https://github.com/msminsu/msminsu.github.io#readme"
+}

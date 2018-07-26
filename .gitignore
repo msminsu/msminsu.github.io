@@ -1,3 +1,10 @@
 _site
 .sass-cache
 .jekyll-metadata
+node_modules/
+.idea/
+package-lock.json
+.DS_Store
+.editorconfig
+.ssh/
+.history/
