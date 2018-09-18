@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAKA,OAAK,aAAY,EAAE;;AACnB,MACC,iBAAgB,CAChB,gBAAe,CACf,WAAU,EACV","file":"style.css","sourcesContent":["@charset \"UTF-8\";\r\n\r\n@import \"util/variable\";\r\n@import \"util/mixin\";\r\n\r\nbody{color: green}\r\n.ts{\r\n\tbackground: #000;\r\n\tfont-size: 30px;\r\n\tpadding: 0;\r\n}"]}

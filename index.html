@@ -1,32 +1,30 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My works</title>
+	<link rel="stylesheet" href="./dist/css/style.css">
+	<script src="./dist/jquery-3.3.1.min.js"></script>
+	<script src="./dist/gs/TweenMax.js"></script>
+	<script src="./dist/js/main.js"></script>
+</head>
+<body>
+	<div class="wrap">
+			<h1 class="logo">Minsu</h1>
+			<div class="con">
+				<h2><em>PORTFOLIO</em>
+					PUBLISING & SCRIPT
+				</h2>
+				<div class="slider">
 
-<div class="catalogue">
-  {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.url }}" class="catalogue-item">
-      <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-          {{ post.content | truncatewords: 30 | strip_html }}
-        </p>
-
-      </div>
-    </a>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.url }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.url }}" class="right arrow">&#8594;</a>
-  {% endif %}
-
-  <span>{{ paginator.page }}</span>
-</div>
+					<ul></ul>
+				</div>
+			</div>
+	</div>
+	<footer>
+		<span></span>
+	</footer>
+</body>
+</html>
