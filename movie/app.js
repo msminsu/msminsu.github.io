@@ -41,7 +41,7 @@ $(document).ready(function(){
             $.each(data.items, function(i,item){
                 var thumb = item.snippet.thumbnails.medium.url;
                 var title = item.snippet.title;
-                var desc = item.snippet.description.substring(0, 100);
+                var desc = item.snippet.description.substring(0, 20);
                 var vid = item.snippet.resourceId.videoId;
 
 
@@ -52,7 +52,6 @@ $(document).ready(function(){
                     <img src="${thumb}" alt=""  class="thumb">
                     <div class="details">
                         <h4>${title}</h4>
-                        <p>${desc}</p>
                     </div>
                 </article>
                 `);
