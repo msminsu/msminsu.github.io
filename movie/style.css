@@ -38,6 +38,7 @@ iframe{
     height: 100%;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 main{
     padding: 58% 18px 10px;
@@ -63,3 +64,13 @@ article:hover{
 .details{
     padding: 8px 22px;
 }
+.serch-bar{
+    position: fixed;
+    bottom:0;
+    padding:10px;
+    background: #fff;
+    border:1px solid #eee;
+    right:0;
+    left:0;
+}
+input{width: 100%;font-size: 18px;}
