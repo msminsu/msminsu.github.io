@@ -18,7 +18,7 @@ $(document).ready(function(){
 
         function  loadVids(){
             $.getJSON(URL, options, function(data){
-                // console.log(data);
+                console.log(data);
                 var id = data.items[0].snippet.resourceId.videoId;
                 mainVid(id);
                 resultsLoop(data); 
@@ -34,10 +34,13 @@ $(document).ready(function(){
         }
 
         function resultsLoop(data){
+            $('main').append(`<p>
+            
+            </p>`)
             $.each(data.items, function(i,item){
                 var thumb = item.snippet.thumbnails.medium.url;
                 var title = item.snippet.title;
-                var desc = item.snippet.description.substring(0, 20);
+                var desc = item.snippet.description;
                 var vid = item.snippet.resourceId.videoId;
 
 
@@ -47,6 +50,7 @@ $(document).ready(function(){
                     <img src="${thumb}" alt=""  class="thumb">
                     <div class="details">
                         <h4>${title}</h4>
+                        <p>${desc}</p>
                     </div>
                 </article>
                 `);
@@ -59,13 +63,15 @@ $(document).ready(function(){
             $.each(data.items, function(i,item){
                 var thumb = item.snippet.thumbnails.medium.url;
                 var title = item.snippet.title;
-                var desc = item.snippet.description.substring(0, 20);
+                // var desc = item.snippet.description.substring(0, 20);
+                var desc = item.snippet.description;
                 var pid = item.id.videoId;
                 $('main').append(`
                 <article class="item" data-key="${pid}">
                     <img src="${thumb}" alt=""  class="thumb">
                     <div class="details">
                         <h4>${title}</h4>
+                        <p>${desc}</p>
                     </div>
                 </article>
                 `);
