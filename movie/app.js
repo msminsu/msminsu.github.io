@@ -29,9 +29,17 @@ $(document).ready(function(){
 
         function mainVid(id){
             $('#video').html(`
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" style="box-sizing: border-box;position:absolute; top:0;left:0;right:0;bottom:0;"
+            sandbox="allow-modals allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+            frameborder="0"
+            src="video.html"
+            >
+            
+            </iframe>
             `);
         }
+
+        // <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         function resultsLoop(data){
             $('main').append(`<p>
