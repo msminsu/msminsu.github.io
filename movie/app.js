@@ -29,12 +29,11 @@ $(document).ready(function(){
 
         function mainVid(id){
             $('#video').html(`
-            <iframe width="100%" height="100%" style="box-sizing: border-box;position:absolute; top:0;left:0;right:0;bottom:0;"
+            <iframe id="ifr" width="100%" height="100%" style="box-sizing: border-box;position:absolute; top:0;left:0;right:0;bottom:0;"
             sandbox="allow-modals allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"
             frameborder="0"
             src="video.html"
             >
-            
             </iframe>
             `);
         }
@@ -42,9 +41,7 @@ $(document).ready(function(){
         // <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         function resultsLoop(data){
-            $('main').append(`<p>
-            
-            </p>`)
+            $('main').append(`<button class="btn">click</button>`)
             $.each(data.items, function(i,item){
                 var thumb = item.snippet.thumbnails.medium.url;
                 var title = item.snippet.title;
@@ -123,6 +120,39 @@ $(document).ready(function(){
                 
             })
           }
+
+
+      
+    //    window.addEventListener("message", processFn, false);		
+    
+    $(document).on('click','main .btn',function(){
+        sendChildMessage();
+        console.log('chekc')
+    });
+
+
+    
+        function processFn(event) {
+    
+            var bla = event.data;
+    
+            console.log('parent',bla);
+    
+        }
+    
+        
+    
+        function sendChildMessage() {	
+
+            console.log('sendCh');
+
+    var opt = {
+        a: 10,
+        b: 20
+    }
+            document.getElementById("ifr").contentWindow.postMessage(opt, '*');
+    
+        }	
         
 
 });
