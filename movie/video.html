@@ -16,31 +16,31 @@
 </head>
 <body>
     <div class="box">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/r7kYyWAt1ng?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+            <iframe sandbox="allow-scripts allow-same-origin allow-presentation" width="100%" height="100%" src="https://www.youtube.com/embed/r7kYyWAt1ng?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
  
  <script>
  $(document).ready(function() {
 
 
-//window.parent.postMessage("sent message from child.html", "*");   // '*' on any domain        
+window.parent.postMessage("sent message from child.html", "*");   // '*' on any domain        
 
 window.addEventListener("message", receiveParentMessage, false);
 
 });
 
-
-var receive = null;
 function receiveParentMessage(e) {
-
- receive = e;
-// console.log('child',e.data)
-addVideo();
+    addVideo(e.data);
 }	
-function addVideo(){
+
+
+//클릭영상 호출
+function addVideo(id){
     $('.box').html(`
     <iframe width="100%" height="100%" 
-    src="https://www.youtube.com/embed/4irB7FBO3j8?playsinline=1" 
+    src="https://www.youtube.com/embed/${id}?playsinline=1" 
+    sandbox="allow-scripts allow-same-origin allow-presentation"
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `);
 }
