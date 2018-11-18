@@ -29,14 +29,21 @@ $(document).ready(function(){
 
         function mainVid(id){
             $('#video').html(`
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?autoplay=1&amp;loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="ifr" width="100%" height="100%" style="box-sizing: border-box;position:absolute; top:0;left:0;right:0;bottom:0;"
+            sandbox="allow-modals allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+            frameborder="0"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
+            src="video.html"
+            >
+            </iframe>
             `);
+            sendChildMessage(id);
         }
 
+        // <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         function resultsLoop(data){
-            $('main').append(`<p>
-            
-            </p>`)
+            $('main').append(`<button class="btn">click</button>`)
             $.each(data.items, function(i,item){
                 var thumb = item.snippet.thumbnails.medium.url;
                 var title = item.snippet.title;
@@ -80,7 +87,9 @@ $(document).ready(function(){
 
         $('main').on('click','article',function(){
             var id = $(this).attr('data-key');
-            mainVid(id);
+           // mainVid(id);
+           // 자식 iframe 에 전달
+           sendChildMessage(id);
         });
         
         $('input').on('change',function(e){
@@ -92,7 +101,6 @@ $(document).ready(function(){
                 q:e.target.value
             }
             
-
             // https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&q=${val || defaultKeyword}&part=snippet&type=video&maxResults=${max}
             search(`https://www.googleapis.com/youtube/v3/search?part=snippet
             &q=${e.target.value}
@@ -108,13 +116,30 @@ $(document).ready(function(){
           function search(URL,opt) {
             $.getJSON(URL, opt, function(data){
                 console.log(data);
-                
                 // var id = data.items[0].snippet.resourceId.videoId;
                 // mainVid(id);
                 resultsLoop2(data); 
-                
             })
           }
+
+
+    // 자식 iframe 이벤트 등록
+       window.addEventListener("message", processFn, false);		
+    
+    // 자식 iframe 이벤트 적용
+        function processFn(event) {
+            var bla = event.data;
+            console.log('parent',bla);    
+        }
+    
+        
+    
+        // 자식 iframe 으로 인자 전달
+        function sendChildMessage(id) {	
+            // console.log('sendCh');
+            document.getElementById("ifr").contentWindow.postMessage(id, '*');
+    
+        }	
         
 
 });

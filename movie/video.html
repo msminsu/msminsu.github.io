@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+            <iframe sandbox="allow-scripts allow-same-origin allow-presentation" width="100%" height="100%" src="https://www.youtube.com/embed/r7kYyWAt1ng?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+ 
+ <script>
+ $(document).ready(function() {
+
+
+window.parent.postMessage("sent message from child.html", "*");   // '*' on any domain        
+
+window.addEventListener("message", receiveParentMessage, false);
+
+});
+
+function receiveParentMessage(e) {
+    addVideo(e.data);
+}	
+
+
+//클릭영상 호출
+function addVideo(id){
+    $('.box').html(`
+    <iframe width="100%" height="100%" 
+    src="https://www.youtube.com/embed/${id}?playsinline=1" 
+    sandbox="allow-scripts allow-same-origin allow-presentation"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `);
+}
+
+ </script>
+</body>
+</html>
