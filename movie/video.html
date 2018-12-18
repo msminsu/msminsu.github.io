@@ -17,7 +17,7 @@
 <body>
     <div class="box">
         
-            <iframe sandbox="allow-scripts allow-same-origin allow-presentation" width="100%" height="100%" src="https://www.youtube.com/embed/r7kYyWAt1ng?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe sandbox="allow-scripts allow-same-origin allow-presentation" width="100%" height="100%" src="https://www.youtube.com/embed/e6RKjUn7n7I?playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
  
  <script>
@@ -38,11 +38,9 @@ function receiveParentMessage(e) {
 //클릭영상 호출
 function addVideo(id){
     $('.box').html(`
-    <iframe width="100%" height="100%" 
-    src="https://www.youtube.com/embed/${id}?playsinline=1" 
-    sandbox="allow-scripts allow-same-origin allow-presentation"
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?autoplay=1&loop=1&cc_load_policy=1rel=0&amp;showinfo=0&playlist=${id}" frameborder="0" allowfullscreen></iframe>
     `);
+    //<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}?playsinline=1" sandbox="allow-scripts allow-same-origin allow-presentation" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 }
 
  </script>
