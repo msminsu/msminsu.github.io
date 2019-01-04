@@ -11,8 +11,10 @@ $(document).ready(function(){
             key: key,
             maxResults: 50,
             playlistId: playlistId,
-
         }
+
+        var prevToken,nextToken;
+
 
         loadVids();
 
@@ -23,6 +25,10 @@ $(document).ready(function(){
                 var id = data.items[0].snippet.resourceId.videoId;
                 mainVid(id);
                 resultsLoop(data); 
+
+
+                if(data.nextPageToken)nextToken = data.nextPageToken;
+                if(data.prevPageToken)prevToken = data.prevPageToken;
             })
         }
 
@@ -38,8 +44,10 @@ $(document).ready(function(){
 
         function resultsLoop(data){
 
-        
+            
             $('main').html('');
+
+            console.log(data);
 
             $.each(data.items, function(i,item){
                 try {
@@ -47,12 +55,13 @@ $(document).ready(function(){
                 } catch (error) {
                     var thumb = "https://i.ytimg.com/vi/4gYdMC5quJM/default.jpg";    
                 }
-
-                
                 var title = item.snippet.title;
                 var desc = item.snippet.description.substring(0, 100);
                 var vid = item.snippet.resourceId.videoId;
 
+
+
+                
                 $('main').append(`
                 <article class="item" data-key="${vid}">
                     <img src="${thumb}" alt=""  class="thumb">
@@ -62,6 +71,7 @@ $(document).ready(function(){
                     </div>
                 </article>
                 `);
+
             });
         }
 
@@ -72,10 +82,20 @@ $(document).ready(function(){
         
 
 
-        $(document).on('click','body button',function(){
+        $(document).on('click','body .btn-srch',function(){
             playlistId = $('input').val();
             if(playlistId ==='') return;
             options.playlistId = playlistId;
+            loadVids();
+        })
+
+        $(document).on('click','body .btn-next',function(){
+            options.pageToken = nextToken;
+            loadVids();
+        })
+
+        $(document).on('click','body .btn-prev',function(){
+            options.pageToken = prevToken;
             loadVids();
         })
 
