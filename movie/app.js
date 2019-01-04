@@ -45,7 +45,11 @@ $(document).ready(function(){
         function resultsLoop(data){
             $('main').append(`<button class="btn">click</button>`)
             $.each(data.items, function(i,item){
-                var thumb = item.snippet.thumbnails.medium.url;
+                try {
+                    var thumb = item.snippet.thumbnails.default.url;
+                } catch (error) {
+                    var thumb = "https://i.ytimg.com/vi/4gYdMC5quJM/default.jpg";    
+                }
                 var title = item.snippet.title;
                 var desc = item.snippet.description;
                 var vid = item.snippet.resourceId.videoId;
